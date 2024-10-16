@@ -10,7 +10,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    /* color: white; */
 }
 
 .navbar-left {
@@ -29,9 +28,6 @@ body {
     font-weight: 400;
 }
 
-/* .navbar-right {
-    } */
-
 .logout-button {
     padding: 8px 16px;
     background-color: #ff3838;
@@ -40,8 +36,6 @@ body {
     cursor: pointer;
     font-size: 16px;
     border-radius: 2px;
-    /* font-weight: bold; */
-    /* font-family: 'Roboto', sans-serif; */
 }
 
 .logout-button:hover {
