@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    {% if msg %}
+    <script>
+        alert("{{ msg }}");
+    </script>
+    {% endif %}
+    <div class="container">
+        <form method="post">
+            <div class="heading">Register</div>
+            <div class="fields">
+                <input id="username" name="username" placeholder="Username" type="text">
+                <input id="mobile" name="mobile" placeholder="Phone No." type="text">
+                <input id="password" name="password" placeholder="Password" type="password">
+            </div>
+            <button type="submit">SIGN UP</button>
+        </form>
+        <div class="sub-text sub1">Already have an account?</div>
+        <div class="sub-text sub2"><a href="/login">SIGN IN</a></div>
+    </div>
+</body>
+
+</html>

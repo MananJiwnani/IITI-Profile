@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    {% if msg %}
+    <script>
+        alert("{{ msg }}");
+    </script>
+    {% endif %}
+    <div class="container">
+        <form method="post">
+            <div class="heading">Welcome</div>
+            <div class="fields">
+                <input id="username" name="username" placeholder="Username" type="text">
+                <input id="password" name="password" placeholder="Password" type="password">
+            </div>
+            <button type="submit">SIGN IN</button>
+        </form>
+        <div class="sub-text sub1">Don't have an account?</div>
+        <div class="sub-text sub2"><a href="/register">SIGN UP</a></div>
+    </div>
+</body>
+
+</html>
