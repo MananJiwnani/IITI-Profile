@@ -1,0 +1,6 @@
+create database Assignment7;
+use Assignment7;
+create table Users(
+username varchar(255),
+mobile bigint,
+`password` varchar(255));

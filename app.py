@@ -4,16 +4,18 @@ import MySQLdb.cursors
 import re
 
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 app = Flask(__name__)
 
-
-app.secret_key = 'your secret key'
-
-
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'Manan@2303'
-app.config['MYSQL_DB'] = 'Assignment7'
+app.config['MYSQL_HOST'] = os.getenv('MYSQL_HOST')
+app.config['MYSQL_USER'] = os.getenv('MYSQL_USER')
+app.config['MYSQL_PASSWORD'] = os.getenv('MYSQL_PASSWORD')
+app.config['MYSQL_DB'] = os.getenv('MYSQL_DB')
+app.secret_key = os.getenv('SECRET_KEY')
 
 
 mysql = MySQL(app)
